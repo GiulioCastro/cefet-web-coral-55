@@ -45,9 +45,6 @@ strong {
 #cardapio article {
   font-size: 14px;
   color: #333;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 8px;
 }
 
 
@@ -59,7 +56,7 @@ strong {
   width: 800px;
   display: grid;
   grid-template-columns: 164px auto;
-  grid-template-rows: 90px auto 64px;
+  grid-template-rows: max-content auto max-content;
 }
 
 #cabecalho-pagina {
@@ -104,11 +101,17 @@ strong {
 
 /* EXERCÍCIO 4: cada item do menu */
 article {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
 }
 
 
 /* EXERCÍCIO 5: o rodapé */
 #rodape-pagina {
+  display: flex;
+  justify-content: flex-end;
+  padding: 45px 15px 25px 44px;
 }
 
 /* EXERCÍCIO 6: lateral */
