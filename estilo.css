@@ -3,13 +3,19 @@
 @import "fonts/ravie.css";
 @import "fonts/verdana.css";
 
+html {
+  min-height: 100vh;
+}
+
 body {
+  margin: 0px;
+  min-height: 100vh;
   background-color: #fff;
-  font-family: 'Ravie';
+  font-family: 'Verdana';
 }
 
 h1 {
-  font-family: 'Verdana';
+  font-family: 'Ravie';
 }
 
 strong {
@@ -44,29 +50,32 @@ strong {
 /* EXERCÍCIO 2: layout da página */
 #recipiente {
   /* layout da página aqui */
-  /* ... */
-  /* ... */
-  /* ... */
-  /* ... */
+  margin: 0px auto;
+  min-height: 100vh;
+  width: 800px;
+  display: grid;
+  grid-template-columns: 164px auto;
+  grid-template-rows: 84px auto 64px;
 }
 
 #cabecalho-pagina {
-
+  grid-column: 2;
 }
 
 #lateral {
-
+  grid-column: 1;
+  grid-row: -1 / 1;
 }
 
 #cardapio {
-
+  grid-column: 2;
+  grid-row: 2;
 }
 
 #rodape-pagina {
-
+  grid-column: 2;
+  grid-row: 3;
 }
-
-
 
 /* EXERCÍCIO 3: cabeçalho da página */
 #cabecalho-pagina {
