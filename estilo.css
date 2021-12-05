@@ -111,7 +111,7 @@ article {
 #rodape-pagina {
   display: flex;
   justify-content: flex-end;
-  padding: 45px 15px 25px 44px;
+  padding: 45px 15px 25px 0px;
 }
 
 /* EXERCÍCIO 6: lateral */
@@ -137,9 +137,14 @@ article {
 
 /* EXERCÍCIO 8: deslocamento no siri e peixe */
 #siri {
+  position: relative;
+  top: 17px;
+  left: -10px;
 }
 
 #peixe {
+  position: relative;
+  left: -44px;
 }
 
 /* EXERCÍCIO 9: bolhas - no HTML e no JS */
