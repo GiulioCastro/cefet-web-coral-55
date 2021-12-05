@@ -55,7 +55,7 @@ strong {
   width: 800px;
   display: grid;
   grid-template-columns: 164px auto;
-  grid-template-rows: 84px auto 64px;
+  grid-template-rows: 90px auto 64px;
 }
 
 #cabecalho-pagina {
@@ -79,7 +79,7 @@ strong {
 
 /* EXERCÍCIO 3: cabeçalho da página */
 #cabecalho-pagina {
-
+ padding: 8px;
 }
 
 #cabecalho-pagina h1 {
@@ -87,6 +87,7 @@ strong {
   font-size: 36px;
   color: #e90c0c;
   font-weight: normal;
+  text-align: center;
 }
 
 #cabecalho-pagina h2 {
@@ -94,6 +95,7 @@ strong {
   font-size: 24px;
   color: #333;
   font-weight: normal;
+  text-align: right;
 }
 
 /* EXERCÍCIO 4: cada item do menu */
