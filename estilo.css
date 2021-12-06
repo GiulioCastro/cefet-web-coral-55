@@ -10,7 +10,7 @@ html {
 body {
   margin: 0px;
   min-height: 100vh;
-  background-color: #fff;
+  background-color: var(--cor-de-fundo);
   font-family: 'Verdana';
 }
 
@@ -23,28 +23,28 @@ strong {
 }
 
 #recipiente {
-  background-image: linear-gradient(to bottom, #f6f1b2, #4599b2 80%);
-  border-left: 1px solid #d3d3d3;
-  border-right: 1px solid #d3d3d3;
+  background-image: var(--imagem-de-fundo);
+  border-left: 1px solid var(--cor-de-borda-recipiente);
+  border-right: 1px solid var(--cor-de-borda-recipiente);
 }
 
 #cardapio {
   background-color: rgba(255, 255, 255, 0.2);
-  border-top: 1px solid #aac0ae;
-  border-bottom: 1px solid #aac0ae;
-  border-left: 1px solid #aac0ae;
+  border-top: 1px solid var(--cor-de-borda-cardapio);
+  border-bottom: 1px solid var(--cor-de-borda-cardapio);
+  border-left: 1px solid var(--cor-de-borda-cardapio);
   padding: 16px;
 }
 
 #cardapio h3 {
   font-size: 18px;
-  color: #333;
+  color: var(--cor-do-texto);
   margin-top: 30px;
 }
 
 #cardapio article {
   font-size: 14px;
-  color: #333;
+  color: var(--cor-do-texto);
 }
 
 
@@ -94,7 +94,7 @@ strong {
 #cabecalho-pagina h2 {
   margin: 0;
   font-size: 24px;
-  color: #333;
+  color: var(--cor-do-texto);
   font-weight: normal;
   text-align: right;
 }
@@ -154,6 +154,23 @@ article {
 /* EXERCÍCIO 10: modo escuro */
 /* no início deste arquivo (depois dos @import), coloque
    as custom properties */
+:root {
+  --cor-do-texto: #333;
+  --cor-de-fundo: #fff;
+  --cor-de-borda-recipiente: #d3d3d3;
+  --cor-de-borda-cardapio: #aac0ae;
+  --imagem-de-fundo: linear-gradient(to bottom, #f6f1b2, #4599b2 80%);
+}
+  
 /* coloque aqui a media query para sobrescrever o valor
    das custom properties para o modo escuro */
-
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cor-do-texto: #eee;
+    --cor-de-fundo: #222222;
+    --cor-de-borda-recipiente: #383838;
+    --cor-de-borda-cardapio: #59645b;
+    --imagem-de-fundo: linear-gradient(to bottom, #002c5f, #000f2c 80%);
+    /* ... */
+  }
+}
